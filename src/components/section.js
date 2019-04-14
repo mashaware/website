@@ -15,10 +15,12 @@ export const Section = ({ name, colour, bleed, children }) => (
         textOrientation: "sideways",
         textTransform: "uppercase",
         textAlign: "center",
+        minWidth: "1.5rem",
         width: "1.5rem",
         paddingTop: "1rem",
         paddingBottom: "1rem",
         background: colour,
+        transform: "rotate(180deg)"
       }}
     >
       {name}
