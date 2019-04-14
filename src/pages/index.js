@@ -42,7 +42,7 @@ hello</p>
     <Circle colour="pink">
       hello
     </Circle> <Circle colour="yellow">
-      piss color
+      lemon color
     </Circle>
     <Circle colour="orange">
       tabby cat
