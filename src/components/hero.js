@@ -17,7 +17,7 @@ export const Hero = ()=>{
    <img height={"40px"} src={wireframes}/>    
    <img height={"40px"} src={stickies}/>    
    <img height={"40px"} src={sitemap}/>    
-   <div className={styles.mugWrapper}><img  src={mug} className={styles.mug}/>  </div>
+   <div className={styles.mugWrapper}><div className={styles.mugInner}><img  src={mug} className={styles.mug}/>  </div></div>
 
 
 
