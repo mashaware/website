@@ -1,6 +1,14 @@
-.columns{
-
+.columns {
+  display: flex;
 }
-.borders{
-    
+.borders > .column {
+  border-left: 1px solid black;
+}
+
+.borders > .column:first-child {
+  border-left: none;
+}
+.column {
+  flex-grow: 1;
+  flex-basis: 0;
 }
