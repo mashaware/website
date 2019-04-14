@@ -1,0 +1,75 @@
+.timeline {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 60px;
+}
+
+.timeline::after{
+     position: absolute;
+    content:'';
+    background: grey;
+    height: 2px;
+    width: calc(100% - 260px);
+    display: block;
+     transform: translate(60px, 100px); 
+    z-index: -1;
+    
+}
+
+.circle {
+  margin: 55px auto;
+  height: 40px;
+  width: 40px;
+  background: lightblue;
+
+  border: 2px solid gray;
+  border-radius: 1000px;
+  transition: width 0.2s, height 0.2s, margin 0.2s;
+
+}
+.london{
+    background: url('../images/london.jpg');
+    background-size: 100px;
+}
+
+.tomsk{
+    background: url('../images/tomsk.jpg');
+    background-size: cover;
+}
+
+.circle:hover {
+  margin: 50px auto;
+  height: 50px;
+  width: 50px;
+
+}
+.entry {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  min-height: 200px;
+  width: 100px;
+}
+.legend {
+  font-size: 0.8em;
+}
+.place {
+  font-weight: bold;
+  text-align: center;
+}
+/* .entry::after{
+    position: absolute;
+    content:'';
+    background: grey;
+    height: 2px;
+    width: 100%;
+    display: block;
+    /* transform: translateY(-200px); 
+    z-index: -1;
+  }
+  .entry:last-child:after{
+    background:red;
+   content: none; 
+  } */
