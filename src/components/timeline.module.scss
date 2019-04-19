@@ -3,16 +3,14 @@
   width: 100%;
   justify-content: space-between;
   padding: 0 60px;
-}
-
-.timeline::after{
+&::after{
      position: absolute;
     content:'';
     background: grey;
     height: 2px;
     width: calc(100% - 260px);
     display: block;
-     transform: translate(60px, 100px); 
+     transform: translate(60px, 112px); 
     z-index: -1;
     
 }
@@ -50,7 +48,7 @@
   justify-content: flex-start;
   align-content: center;
   min-height: 200px;
-  width: 100px;
+  width: 150px;
 }
 .legend {
   font-size: 0.8em;
@@ -58,18 +56,7 @@
 .place {
   font-weight: bold;
   text-align: center;
+  height: 2.2rem;
 }
-/* .entry::after{
-    position: absolute;
-    content:'';
-    background: grey;
-    height: 2px;
-    width: 100%;
-    display: block;
-    /* transform: translateY(-200px); 
-    z-index: -1;
-  }
-  .entry:last-child:after{
-    background:red;
-   content: none; 
-  } */
+
+}
