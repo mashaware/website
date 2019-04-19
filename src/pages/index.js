@@ -2,7 +2,6 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 import { Section } from "../components/section"
 import { Circle } from "../components/circle"
@@ -10,10 +9,14 @@ import { Timeline, Entry } from "../components/timeline"
 import { Column, Columns } from "../components/columns"
 import { ContactForm } from "../components/contactForm";
 import { Hero } from "../components/hero";
+import { ContactLogos } from '../components/contactLogos';
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <Section name="?" colour="purple">
+ <Section name="test" color="black">
+ <ContactLogos/>
+ </Section>
+  <Section name="?" colour="purple">
     <Hero/>
     </Section>
     <Section name="things" colour="#dd11ff">
@@ -61,12 +64,7 @@ const IndexPage = () => (
       <Circle colour="yellow">lemon color</Circle>
       <Circle colour="orange">tabby cat</Circle>
     </Section>
-    <Section bleed name="hello" colour="pink">
-      <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-        <Image />
-      </div>
-      <Link to="/page-2/">Go to page 2</Link>
-    </Section>
+ 
     <Section name="hey" colour="#daba3e">
       <Timeline>
         <Entry place="tomsk">this is some text to explain </Entry>
@@ -76,12 +74,8 @@ const IndexPage = () => (
         <Entry place="london">and provide some context on my experience</Entry>
       </Timeline>
     </Section>
-    <Section name="contact" colour="green">
-    <Columns>
-    <Column>
+    <Section name="contact" colour="#CAF1D8" bleed>
     <ContactForm/>
-    </Column>
-    </Columns>
     </Section>
   </Layout>
 )

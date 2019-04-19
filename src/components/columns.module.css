@@ -1,5 +1,7 @@
 .columns {
   display: flex;
+  justify-content: space-evenly;
+  width: 100%;
 }
 .borders > .column {
   border-left: 1px solid black;

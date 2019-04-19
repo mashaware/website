@@ -8,6 +8,6 @@ export const Columns = ({borders, children}) => (
     </div>
 )
 
-export const Column = ({children}) => (<div className={styles.column}>
+export const Column = ({className, children}) => (<div className={`${styles.column} ${className}`}>
     {children}
 </div>)
