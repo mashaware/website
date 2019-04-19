@@ -1,6 +1,6 @@
 import PropTypes from "prop-types"
 import React from "react"
-import styles from "./timeline.module.css"
+import styles from "./timeline.module.scss"
 export const Timeline = ({ children }) => <div className={styles.timeline}>{children}</div>
 
 export const Entry = ({ place, children }) => (

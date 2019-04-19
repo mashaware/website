@@ -1,0 +1,12 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  textarea {
+    resize: none;
+    height: 10rem;
+  }
+  input[type="submit"]{
+      background: rgb(184, 184, 184);
+  }
+}
