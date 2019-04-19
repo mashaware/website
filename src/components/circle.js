@@ -10,6 +10,7 @@ export const Circle = ({ style, children, colour }) => (
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
+      textAlign:"center"
     }}
   >
     <div
