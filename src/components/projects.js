@@ -1,8 +1,9 @@
 import React from "react"
-import { Circle } from "../components/circle"
+import { Circle } from "./circle"
+import styles from "./projects.module.scss"
 
 export const Projects = ()=>(
-    <div>
+    <div className={styles.container}>
     <Circle colour="pink">
       <strong>
         Mastercard <br />

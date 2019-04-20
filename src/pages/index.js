@@ -10,7 +10,7 @@ import { Column, Columns } from "../components/columns"
 import { ContactForm } from "../components/contactForm"
 import { Hero } from "../components/hero"
 import { ContactLogos } from "../components/contactLogos"
-import { Projects } from "./projects";
+import { Projects } from "../components/projects";
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
