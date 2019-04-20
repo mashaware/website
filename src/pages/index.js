@@ -10,6 +10,7 @@ import { Column, Columns } from "../components/columns"
 import { ContactForm } from "../components/contactForm"
 import { Hero } from "../components/hero"
 import { ContactLogos } from "../components/contactLogos"
+import { Projects } from "./projects";
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
@@ -28,28 +29,7 @@ const IndexPage = () => (
     </Section>
 
     <Section name="projects" colour="rgb(251,208,239)">
-      <Circle colour="pink">
-        <strong>
-          Mastercard <br />
-          live client
-          <br />
-        </strong>
-        group
-        <br />
-        onboarding
-      </Circle>
-      <Circle colour="yellow">
-        <strong>
-          Ski Deal Comparison
-          <br />
-          live client
-          <br />
-        </strong>
-        group
-        <br />
-        e-commerce
-      </Circle>
-      <Circle colour="orange">tabby cat</Circle>
+  <Projects/>
     </Section>
     <Section name="skills" colour="rgb(183,255,238)">
       <Columns borders>
