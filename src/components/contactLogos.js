@@ -33,7 +33,7 @@ export const ContactLogos = () => {
         <a href="#">
           <Img fixed={gmail.childImageSharp.fixed} alt="gmail" />
         </a>
-        <a href="#">
+        <a href="https://www.linkedin.com/in/mashaware/">
      
           <Img fixed={linkedin.childImageSharp.fixed} alt="linkedin" />
         </a>
