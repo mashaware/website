@@ -4,42 +4,33 @@
   justify-content: space-between;
   padding: 0 60px;
 
+  position: relative;
   @media (max-width: 700px) {
     flex-direction: column;
-  }
 
-  &::after {
-    position: absolute;
-    content: "";
-    background: grey;
-    height: 2px;
-    width: calc(100% - 270px);
-    display: block;
-    transform: translate(60px, 95px);
-    z-index: -1;
-    @media (max-width: 700px) {
-      width: 2px;
-      height: calc(100% - 120px);
-      transform: translate(40px, 40px);
+    &::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      bottom: 0;
+      left: 0px;
+      transform: translate(99px, 0);
+      border: 1px solid grey;
+      z-index: -1;
     }
   }
-
-  .circle {
-    margin: 35px auto;
-    height: 40px;
-    width: 40px;
-    background: lightblue;
-    flex-shrink: 0;
-    border: 2px solid gray;
-    border-radius: 1000px;
-    transition: width 0.2s, height 0.2s, margin 0.2s;
-
-    @media (max-width: 700px) {
-      order: -1;
-      margin: 0px 20px 20px;
+  @media (min-width: 700px) {
+    &::after {
+      position: absolute;
+      content: "";
+      background: grey;
+      height: 2px;
+      width: calc(100% - 270px);
+      display: block;
+      transform: translate(60px, 95px);
+      z-index: -1;
     }
   }
-
   .london {
     background: url("../images/london.jpg");
     background-size: 100px;
@@ -57,10 +48,25 @@
     min-height: 200px;
     width: 150px;
 
+    .circle {
+      margin: 35px auto;
+      height: 40px;
+      width: 40px;
+      background: lightblue;
+      flex-shrink: 0;
+      border: 2px solid gray;
+      border-radius: 1000px;
+
+      @media (max-width: 700px) {
+        order: -1;
+        margin: 0px 20px 20px;
+      }
+    }
+
     &:hover {
-       
-   
       .circle {
+        transition: width 0.2s, height 0.2s, margin 0.2s;
+
         margin: 30px auto;
         height: 50px;
         width: 50px;
