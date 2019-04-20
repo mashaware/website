@@ -61,7 +61,7 @@ const IndexPage = () => (
             <li>Principle</li>
             <li>Autodesk</li>
             <li>SketchBook</li>
-            <li>RealtimeBoard</li>
+            <li>Miro</li>
             <li>HTML5 (basic)</li>
             <li>CSS (basic)</li>
             <li>Basecamp</li>
@@ -76,6 +76,7 @@ const IndexPage = () => (
             <li>agile</li>
             <li>lean</li>
             <li>design thinking</li>
+            <li>facilitation</li>
             <li>brainstorming</li>
             <li>active listening</li>
             <li>standup</li>
