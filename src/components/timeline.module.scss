@@ -1,0 +1,110 @@
+.timeline {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 60px;
+
+  position: relative;
+  @media (max-width: 700px) {
+    flex-direction: column;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      bottom: 0;
+      left: 0px;
+      transform: translate(99px, 0);
+      border: 1px solid grey;
+      z-index: -1;
+    }
+  }
+  @media (min-width: 700px) {
+    &::after {
+      position: absolute;
+      content: "";
+      background: grey;
+      height: 2px;
+      width: calc(100% - 270px);
+      display: block;
+      transform: translate(60px, 95px);
+      z-index: -1;
+    }
+  }
+  .london {
+    background: url("../images/london.jpg");
+    background-size: 100px;
+  }
+
+  .tomsk {
+    background: url("../images/tomsk.jpg");
+    background-size: cover;
+  }
+
+  .entry {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 200px;
+    width: 150px;
+
+    .circle {
+      margin: 35px auto;
+      height: 40px;
+      width: 40px;
+      background: lightblue;
+      flex-shrink: 0;
+      border: 2px solid gray;
+      border-radius: 1000px;
+
+      @media (max-width: 700px) {
+        order: -1;
+        margin: 0px 20px 20px;
+      }
+    }
+
+    &:hover {
+      .circle {
+        transition: width 0.2s, height 0.2s, margin 0.2s;
+
+        margin: 30px auto;
+        height: 50px;
+        width: 50px;
+
+        @media (max-width: 700px) {
+          margin: -5px 15px 15px;
+          height: 50px;
+          width: 50px;
+        }
+      }
+    }
+
+    @media (max-width: 700px) {
+      display: flex;
+      flex-direction: row;
+      min-height: 0;
+      width: 100%;
+      align-content: baseline;
+      padding-top: 2rem;
+    }
+  }
+  .legend {
+    font-size: 0.8em;
+    text-align: center;
+    @media (max-width: 700px) {
+      text-align: left;
+    }
+  }
+  .place {
+    font-weight: bold;
+    text-align: center;
+    height: 2.2rem;
+    flex-grow: 0;
+    @media (max-width: 700px) {
+      width: 5rem;
+      flex-shrink: 0;
+      text-align: right;
+      margin: 0 1rem 0;
+    }
+  }
+}

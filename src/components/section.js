@@ -7,6 +7,7 @@ export const Section = ({ name, colour, bleed, children }) => (
       width: "100%",
       display: "flex",
       alignItems: "stretch",
+      
     }}
   >
     <div
@@ -30,6 +31,7 @@ export const Section = ({ name, colour, bleed, children }) => (
         flexGrow: "1",
         display: " flex",
         background: bleed && colour,
+        paddingBottom: "1.5rem"
       
       }}
     >

@@ -7,9 +7,9 @@ import { Section } from "../components/section"
 import { Circle } from "../components/circle"
 import { Timeline, Entry } from "../components/timeline"
 import { Column, Columns } from "../components/columns"
-import { ContactForm } from "../components/contactForm";
-import { Hero } from "../components/hero";
-import { ContactLogos } from '../components/contactLogos';
+import { ContactForm } from "../components/contactForm"
+import { Hero } from "../components/hero"
+import { ContactLogos } from "../components/contactLogos"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
@@ -119,14 +119,16 @@ const IndexPage = () => (
     <Section name="Background" colour="#A27AFE">
       <Timeline>
         <Entry place="Tomsk">
-          2009-2014 Degree in Lingustics & Translation{" "}
+          2009-2014 <p>Degree in Lingustics & Translation</p>
         </Entry>
-        <Entry place="Tomsk">2014-2018 Translator & English Tutor</Entry>
+        <Entry place="Tomsk">
+          2014-2018 <p>Translator & English Tutor</p>
+        </Entry>
         <Entry place="Tomsk & London">
-          2016-2018 Studied developmental psychology
+          2016-2018 <p>Studied developmental psychology</p>
         </Entry>
         <Entry place="London">
-          2018-2019 General Assembly User Experience design immersive{" "}
+          2018-2019 <p>General Assembly User Experience design immersive</p>
         </Entry>
       </Timeline>
     </Section>

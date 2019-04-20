@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "./contactForm.module.css"
+import styles from "./contactForm.module.scss"
 import { Columns, Column } from "./columns"
 import face from "../images/my face.png"
 import { ContactLogos } from "./contactLogos"
