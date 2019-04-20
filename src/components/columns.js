@@ -1,9 +1,9 @@
 // import PropTypes from "prop-types"
 import React from "react"
-import styles from "./columns.module.css"
+import styles from "./columns.module.scss"
 
-export const Columns = ({borders, children}) => (
-    <div className={`${styles.columns} ${borders && styles.borders}`}>
+export const Columns = ({borders, children, className}) => (
+<div className={`${styles.columns} ${borders && styles.borders} ${className}`}>
     {children}
     </div>
 )
