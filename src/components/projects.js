@@ -4,7 +4,7 @@ import styles from "./projects.module.scss"
 
 export const Projects = ()=>(
     <div className={styles.container}>
-    <Circle colour="pink">
+     <Circle colour="pink">
       <strong>
         Mastercard <br />
         live client
@@ -13,7 +13,7 @@ export const Projects = ()=>(
       group
       <br />
       onboarding
-    </Circle>
+    </Circle> 
     <Circle colour="yellow">
       <strong>
         Ski Deal Comparison

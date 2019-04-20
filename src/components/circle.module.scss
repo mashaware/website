@@ -1,0 +1,14 @@
+.circle {
+  height: 13rem;
+  width: 13rem;
+  border-radius: 10000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 2rem;
+ 
+  .contents {
+    margin: auto;
+  }
+}
