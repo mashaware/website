@@ -22,10 +22,10 @@ const IndexPage = () => (
       <Hero />
     </Section>
 
-    <Section name="projects" colour="rgb(251,208,239)">
+    <Section name="projects" colour="#fbd0ef">
       <Projects />
     </Section>
-    <Section name="skills" colour="rgb(183,255,238)">
+    <Section name="skills" colour="#b7ffee">
       <Skills />
     </Section>
 
