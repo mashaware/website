@@ -1,0 +1,76 @@
+$t: 15s;
+$r: 200px;
+
+.wrapper {
+  padding: 2rem;
+}
+
+.hero {
+  position: relative;
+  height: 300px;
+  width: 300px;
+  margin: auto;
+}
+ 
+.book {
+  top: calc(50% - 20px);
+  left: calc(50% - 20px);
+  position: absolute;
+  display: block;
+  animation: spin $t   linear infinite;
+  animation-delay: -($t / 6) * 1; //negative delay to change phase
+  img {
+    animation: float 1s linear infinite alternate-reverse;
+  }
+}
+.pen {
+  top: calc(50% - 20px);
+  left: calc(50% - 20px);
+  position: absolute;
+  display: block;
+  animation: spin $t   linear infinite;
+  animation-delay: -($t / 6) * 2;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg) translateX($r) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX($r) rotate(-360deg);
+  }
+}
+ 
+.wireframes {
+  top: calc(50% - 20px);
+  left: calc(50% - 20px);
+  position: absolute;
+  display: block;
+  animation: spin $t   linear infinite;
+  animation-delay: -($t / 6) * 3;
+}
+.stickies {
+  top: calc(50% - 20px);
+  left: calc(50% - 20px);
+  position: absolute;
+  display: block;
+  animation: spin $t  linear infinite;
+  animation-delay: -($t / 6) * 4;
+}
+
+.sitemap {
+  top: calc(50% - 20px);
+  left: calc(50% - 20px);
+  position: absolute;
+  display: block;
+  animation: spin $t  linear infinite;
+  animation-delay: -($t / 6) * 5;
+}
+.mug {
+  top: calc(50% - 20px);
+  left: calc(50% - 20px);
+  position: absolute;
+  display: block;
+  animation: spin $t linear infinite;
+  animation-delay: -($t / 6) * 6; //negative delay to change phase
+}
