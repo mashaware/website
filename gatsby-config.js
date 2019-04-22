@@ -40,6 +40,27 @@ module.exports = {
         implementation: require("sass"),
       },
     },
+    {
+      resolve: `gatsby-plugin-favicon`,
+      options: {
+        logo: "./src/images/my face.png",
+  
+        // WebApp Manifest Configuration
+        lang: 'en-GB',
+        background: '#abc',
+        theme_color: '#daa',
+  
+        icons: {
+          android: true,
+          appleIcon: true,
+          appleStartup: true,
+          coast: false,
+          favicons: true,
+          firefox: true,
+          yandex: false,
+          windows: false
+        }
+      }
     // `gatsby-plugin-postcss`
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
