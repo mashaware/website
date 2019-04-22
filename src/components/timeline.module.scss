@@ -15,7 +15,7 @@
       bottom: 0;
       left: 0px;
       transform: translate(99px, 0);
-      border: 1px solid grey;
+      border: 1px solid #979797;
       z-index: -1;
     }
   }
@@ -23,7 +23,7 @@
     &::after {
       position: absolute;
       content: "";
-      background: grey;
+      background: #979797;
       height: 2px;
       width: calc(100% - 270px);
       display: block;
@@ -52,9 +52,9 @@
       margin: 35px auto;
       height: 40px;
       width: 40px;
-      background: lightblue;
+      background: white;
       flex-shrink: 0;
-      border: 2px solid gray;
+      border: 2px solid #979797;
       border-radius: 1000px;
 
       @media (max-width: 700px) {
