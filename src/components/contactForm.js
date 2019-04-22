@@ -1,11 +1,11 @@
 import React from "react"
 import styles from "./contactForm.module.scss"
-import { Columns, Column } from "./columns"
-import face from "../images/my face.png"
 import { ContactLogos } from "./contactLogos"
 
 export const ContactForm = () => (
-    <form
+  <div  
+    className={styles.form}>
+  <form
       name="contact"
       method="post"
       action="/success"
@@ -22,5 +22,5 @@ export const ContactForm = () => (
       <label htmlFor="message">your message</label>
       <textarea name="message" id="message" required />
       <input type="submit" value="send" />
-    </form>
+    </form></div>
 )
