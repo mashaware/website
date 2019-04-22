@@ -25,6 +25,16 @@ $r: 200px;
   height: 300px;
   width: 300px;
   margin: auto;
+  animation: wobble $t / 4 linear infinite alternate-reverse;
+
+}
+@keyframes wobble {
+  from {
+    transform: rotate(-3deg);
+  }
+  to {
+    transform: rotate(3deg);
+  }
 }
 
 .book {
@@ -34,9 +44,7 @@ $r: 200px;
   display: block;
   animation: spin $t linear infinite;
   animation-delay: -($t / 6) * 1; //negative delay to change phase
-  img {
-    animation: float 1s linear infinite alternate-reverse;
-  }
+   
 }
 .pen {
   top: calc(50% - 20px);
