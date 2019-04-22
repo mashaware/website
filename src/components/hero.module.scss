@@ -1,8 +1,23 @@
 $t: 15s;
 $r: 200px;
 
+.outer {
+  display: flex;
+  align-items: center;
+  @media (max-width: 700px) {
+    flex-direction: column;
+  }
+}
+.col {
+  flex-grow: 0;
+}
+
 .wrapper {
   padding: 2rem;
+  @media (max-width: 700px) {
+    order: -1;
+    margin-bottom: 2rem;
+  }
 }
 
 .hero {
@@ -11,13 +26,13 @@ $r: 200px;
   width: 300px;
   margin: auto;
 }
- 
+
 .book {
   top: calc(50% - 20px);
   left: calc(50% - 20px);
   position: absolute;
   display: block;
-  animation: spin $t   linear infinite;
+  animation: spin $t linear infinite;
   animation-delay: -($t / 6) * 1; //negative delay to change phase
   img {
     animation: float 1s linear infinite alternate-reverse;
@@ -28,7 +43,7 @@ $r: 200px;
   left: calc(50% - 20px);
   position: absolute;
   display: block;
-  animation: spin $t   linear infinite;
+  animation: spin $t linear infinite;
   animation-delay: -($t / 6) * 2;
 }
 
@@ -40,13 +55,13 @@ $r: 200px;
     transform: rotate(360deg) translateX($r) rotate(-360deg);
   }
 }
- 
+
 .wireframes {
   top: calc(50% - 20px);
   left: calc(50% - 20px);
   position: absolute;
   display: block;
-  animation: spin $t   linear infinite;
+  animation: spin $t linear infinite;
   animation-delay: -($t / 6) * 3;
 }
 .stickies {
@@ -54,7 +69,7 @@ $r: 200px;
   left: calc(50% - 20px);
   position: absolute;
   display: block;
-  animation: spin $t  linear infinite;
+  animation: spin $t linear infinite;
   animation-delay: -($t / 6) * 4;
 }
 
@@ -63,7 +78,7 @@ $r: 200px;
   left: calc(50% - 20px);
   position: absolute;
   display: block;
-  animation: spin $t  linear infinite;
+  animation: spin $t linear infinite;
   animation-delay: -($t / 6) * 5;
 }
 .mug {

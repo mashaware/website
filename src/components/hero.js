@@ -26,14 +26,12 @@ const Anim = () => {
   )
 }
 export const Hero = () => (
-  <Columns>
-    <Column>
+  <div className={styles.outer}>
+    <div className={styles.col}>
       Hi! I’m Masha, a UX designer & doodler with a background in language
       teaching and psychology ready to disrupt learning.
       <ContactLogos />
-    </Column>
-    <Column>
+    </div>
       <Anim />
-    </Column>
-  </Columns>
+  </div>
 )
