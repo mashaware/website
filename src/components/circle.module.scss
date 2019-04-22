@@ -6,8 +6,17 @@
   justify-content: center;
   align-items: center;
   text-align: center;
- 
+  margin: 0.5rem;
+  transition: transform 0.2s width 0.2s, height 0.2s, margin 0.2s;
+
   .contents {
     margin: auto;
+  }
+  &:hover{
+    height: 14rem;
+    width: 14rem;
+    margin: 0;
+    transform: rotate(5deg);
+
   }
 }
