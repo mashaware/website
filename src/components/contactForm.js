@@ -6,7 +6,7 @@ import { ContactLogos } from "./contactLogos"
 
 export const ContactForm = () => (
     <form
-      name="contact2"
+      name="contact"
       method="post"
       action="/success"
       data-netlify="true"
@@ -14,6 +14,7 @@ export const ContactForm = () => (
     >
       <ContactLogos />
       <input type="hidden" name="bot-field" />
+      <input type="hidden" name="form-name" value="contact" />
       <label htmlFor="name">name</label>
       <input type="text" name="name" id="name" required />
       <label htmlFor="email">email</label>
