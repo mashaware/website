@@ -29,7 +29,7 @@ const Layout = ({ children }) => (
         <div>
           <main>{children}</main>
           <footer>
-            Designed by Maria Ware <br />
+            Designed by Маша Ware <br />
             Developed by Alex Ware <br />
             Copyright {new Date().getFullYear()}
           </footer>
