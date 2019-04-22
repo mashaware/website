@@ -1,15 +1,11 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Section } from "../components/section"
-import { Circle } from "../components/circle"
 import { Timeline, Entry } from "../components/timeline"
-import { Column, Columns } from "../components/columns"
 import { ContactForm } from "../components/contactForm"
 import { Hero } from "../components/hero"
-import { ContactLogos } from "../components/contactLogos"
 import { Projects } from "../components/projects"
 import { Skills } from "../components/skills"
 import { Info } from "../components/info";

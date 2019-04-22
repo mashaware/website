@@ -8,7 +8,6 @@ import sitemap from "../images/sitemap.png"
 import stickies from "../images/stickies.png"
 import styles from "./hero.module.scss"
 import { ContactLogos } from "./contactLogos"
-import { Columns, Column } from "./columns"
 
 const Anim = () => {
   return (
