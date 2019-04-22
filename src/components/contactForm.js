@@ -7,7 +7,7 @@ import { ContactLogos } from "./contactLogos"
 export const ContactForm = () => (
   <div class={styles.form}>
     <form
-      name="contact"
+      name="contact2"
       method="POST"
       // action="/success"
       data-netlify="true"
@@ -18,7 +18,7 @@ export const ContactForm = () => (
       <label htmlFor="name">name</label>
       <input type="text" name="name" id="name" required />
       <label htmlFor="email">email</label>
-      <input type="text" name="email" id="email" required />
+      <input type="email" name="email" id="email" required />
       <label htmlFor="message">your message</label>
       <textarea name="message" id="message" required />
       <input type="submit" value="send" />
