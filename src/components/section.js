@@ -16,6 +16,7 @@ export const Section = ({ name, colour, bleed, children }) => (
       style={{
         background: bleed && colour,
       }}
+      id={name}
     >
       {children}
     </div>

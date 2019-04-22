@@ -29,7 +29,7 @@ const IndexPage = () => (
       <Skills />
     </Section>
 
-    <Section name="Background" colour="#A27AFE">
+    <Section name="background" colour="#A27AFE">
       <Timeline>
         <Entry place="Tomsk">
           2009-2014 <p>Degree in Lingustics & Translation</p>
