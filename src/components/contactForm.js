@@ -5,11 +5,10 @@ import face from "../images/my face.png"
 import { ContactLogos } from "./contactLogos"
 
 export const ContactForm = () => (
-  <div class={styles.form}>
     <form
       name="contact2"
-      method="POST"
-      // action="/success"
+      method="post"
+      action="/success"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
     >
@@ -23,5 +22,4 @@ export const ContactForm = () => (
       <textarea name="message" id="message" required />
       <input type="submit" value="send" />
     </form>
-  </div>
 )

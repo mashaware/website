@@ -2,10 +2,8 @@
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    flex-direction: column;
     align-items: center;
-    @media (min-width:820px) {
     flex-direction: row;
-
-    }
+    flex-wrap: wrap;
+    padding:  6rem 0;
 }

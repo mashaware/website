@@ -14,13 +14,13 @@ const Anim = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.hero}>
-        <img height={"300px"} src={face} className={styles.face} />
-        <img height={"40px"} src={book} className={styles.book}/> 
-        <img height={"40px"} src={pen} className={styles.pen} />
-        <img height={"40px"} src={wireframes} className={styles.wireframes} />
-        <img height={"40px"} src={stickies} className={styles.stickies} />
-        <img height={"40px"} src={sitemap} className={styles.sitemap} />
-        <img height={"40px"} src={mug} className={styles.mug} />{" "}
+        <img src={face} className={styles.face} />
+        <img src={book} className={styles.book}/> 
+        <img src={pen} className={styles.pen} />
+        <img src={wireframes} className={styles.wireframes} />
+        <img src={stickies} className={styles.stickies} />
+        <img src={sitemap} className={styles.sitemap} />
+        <img src={mug} className={styles.mug} />{" "}
       </div>
     </div>
   )

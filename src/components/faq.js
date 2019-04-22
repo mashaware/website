@@ -6,7 +6,7 @@ export const FAQ = ()=>(<div>
         <p>
           “Reject the state of distracted hyperconnectedness” - I’ve recently
           listened to Cal Newport on Dr Rangan Chatterjee’s podcast Feel Better
-          Live More discussing How Social Media Can Make You Ill (ep 50). As
+          Live More discussing <a href="https://drchatterjee.com/social-media-making-ill-cal-newport/">How Social Media Can Make You Ill (ep 50)</a>. As
           somebody who’s been struggling with how addictive and distracting
           social media is myself, I find the public acknowledgment of how it
           affects our mental health empowering - as well as a reminder to keep
