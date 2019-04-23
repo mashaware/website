@@ -1,7 +1,7 @@
 $t: 15s;
-$r: 150px;
-$f: 250px;
-$i: 50px;
+$r: 200px;
+$f: 200px;
+$i: 110px;
 
 .outer {
   display: flex;
@@ -48,7 +48,7 @@ $i: 50px;
 .book {
   width: $i;
   top: calc(50% - #{$i / 2});
-  left: calc(50% - #{$i / 2});
+  left: calc(45% - #{$i / 2});
   position: absolute;
   display: block;
   animation: spin $t linear infinite;
@@ -57,7 +57,7 @@ $i: 50px;
 .pen {
   width: $i;
   top: calc(50% - #{$i/2} / 2);
-  left: calc(50% - #{$i/2} / 2);
+  left: calc(45% - #{$i/2} / 2);
   position: absolute;
   display: block;
   animation: spin $t linear infinite;
@@ -74,20 +74,20 @@ $i: 50px;
 }
 
 .wireframes {
-  width: $i;
+  width: $i * 1.5;
 
   top: calc(50% - #{$i/2} / 2);
-  left: calc(50% - #{$i/2} / 2);
+  left: calc(45% - #{$i/2} / 2);
   position: absolute;
   display: block;
   animation: spin $t linear infinite;
   animation-delay: -($t / 6) * 3;
 }
 .stickies {
-  width: $i;
+  width: 70px;
 
   top: calc(50% - #{$i/2} / 2);
-  left: calc(50% - #{$i/2} / 2);
+  left: calc(45% - #{$i/2} / 2);
   position: absolute;
   display: block;
   animation: spin $t linear infinite;
@@ -98,7 +98,7 @@ $i: 50px;
   width: $i;
 
   top: calc(50% - #{$i/2} / 2);
-  left: calc(50% - #{$i/2} / 2);
+  left: calc(45% - #{$i/2} / 2);
   position: absolute;
   display: block;
   animation: spin $t linear infinite;
@@ -108,7 +108,7 @@ $i: 50px;
   width: $i;
 
   top: calc(50% - #{$i/2} / 2);
-  left: calc(50% - #{$i/2} / 2);
+  left: calc(45% - #{$i/2} / 2);
   position: absolute;
   display: block;
   animation: spin $t linear infinite;
