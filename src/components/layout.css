@@ -4,7 +4,6 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 body {
-  color: #434343;
   overflow-x: hidden;
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -201,7 +200,7 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: hsla(0, 0%, 0%, 0.8);
+  color: #434343;
   font-family: 'Roboto Mono', monospace;
   font-weight: normal;
   word-wrap: break-word;
