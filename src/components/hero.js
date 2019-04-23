@@ -5,7 +5,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 const getSrc = _ => _.childImageSharp.fixed.src
 const Anim = () => {
-  const {face:face, book, wireframes, mug, pen, sitemap, stickies, } = useStaticQuery(
+  const {face, book, wireframes, mug, pen, sitemap, stickies, } = useStaticQuery(
      graphql`
 fragment imageQ on File {
   childImageSharp {
