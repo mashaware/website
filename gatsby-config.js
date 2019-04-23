@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Masha Ware`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Hi! I’m Masha, a UX designer & doodler with a background in language teaching and psychology ready to disrupt learning.`,
     author: `Masha Ware`,
   },
   plugins: [
@@ -18,12 +18,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
+        name: `Masha Ware UX designer`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
+        background_color: `#fbd0ef`,
+        theme_color: `#fbd0ef`,
+        icon: 'src/images/my face.png',
+        display: `browser`,
       },
     },
     {
@@ -40,6 +41,7 @@ module.exports = {
         implementation: require("sass"),
       },
     },
+   
     // `gatsby-plugin-postcss`
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

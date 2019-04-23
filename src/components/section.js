@@ -1,39 +1,22 @@
 import React from "react"
 import PropTypes from "prop-types"
-
+import styles from "./section.module.scss"
 export const Section = ({ name, colour, bleed, children }) => (
-  <div
-    style={{
-      width: "100%",
-      display: "flex",
-      alignItems: "stretch",
-      
-    }}
-  >
+  <div className={styles.wrapper}>
     <div
+      className={styles.sidebar}
       style={{
-        writingMode: "vertical-lr",
-        textOrientation: "sideways",
-        textTransform: "uppercase",
-        textAlign: "center",
-        minWidth: "1.5rem",
-        width: "1.5rem",
-        paddingTop: "1rem",
-        paddingBottom: "1rem",
         background: colour,
-        transform: "rotate(180deg)"
       }}
     >
       {name}
     </div>
     <div
+      className={styles.container}
       style={{
-        flexGrow: "1",
-        display: " flex",
         background: bleed && colour,
-        paddingBottom: "1.5rem"
-      
       }}
+      id={name}
     >
       {children}
     </div>

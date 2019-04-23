@@ -12,13 +12,13 @@ const Header = ({ siteTitle }) => (
     <nav className={styles.nav}>
       <ul>
         <li>
-          <Link to="/">work</Link>
+          <Link to="/#projects">work</Link>
         </li>
         <li>
-          <Link to="/">about me</Link>
+          <Link to="/#background">about me</Link>
         </li>
         <li>
-          <Link to="/">contact me</Link>
+          <Link to="/#contact">contact me</Link>
         </li>
       </ul>
     </nav>

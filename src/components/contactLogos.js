@@ -29,19 +29,15 @@ export const ContactLogos = () => {
            )   
     return (
       <div className={styles.logos}>
-
-        <a href="#">
-          <Img fixed={gmail.childImageSharp.fixed} alt="gmail" />
+        <a href="mailto:&#109;&#097;&#115;&#104;&#097;&#119;&#097;&#114;&#101;&#046;&#117;&#120;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">
+          <Img fixed={gmail.childImageSharp.fixed} alt="send a message to my gmail account" />
         </a>
-        <a href="#">
-     
-          <Img fixed={linkedin.childImageSharp.fixed} alt="linkedin" />
+        <a href="https://www.linkedin.com/in/mashaware/" target="_blank">
+          <Img fixed={linkedin.childImageSharp.fixed} alt="my linkedin profile" />
         </a>
-        <a href="#">
- 
-          <Img fixed={medium.childImageSharp.fixed} alt="" />
+        <a href="https://medium.com/@mashaware" target="_blank">
+          <Img fixed={medium.childImageSharp.fixed} alt="my posts on medium" />
         </a> 
       </div>
     )
     }
-    //<Img fluid={linkedin.childImageSharp.fluid} alt="" />

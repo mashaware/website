@@ -1,0 +1,116 @@
+$t: 15s;
+$r: 150px;
+$f: 250px;
+$i: 50px;
+
+.outer {
+  display: flex;
+  align-items: center;
+  @media (max-width: 700px) {
+    flex-direction: column;
+  }
+}
+.col {
+  flex-grow: 1;
+  flex-basis: 0;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+.wrapper {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 2rem;
+  @media (max-width: 700px) {
+    order: -1;
+    margin-bottom: 2rem;
+  }
+}
+
+.hero {
+  position: relative;
+  height: $f;
+  width: $f;
+  margin: auto;
+  .face {
+    animation: wobble $t / 4 linear infinite alternate-reverse;
+  }
+}
+@keyframes wobble {
+  from {
+    transform: rotate(-3deg);
+  }
+  to {
+    transform: rotate(3deg);
+  }
+}
+
+.book {
+  width: $i;
+  top: calc(50% - #{$i / 2});
+  left: calc(50% - #{$i / 2});
+  position: absolute;
+  display: block;
+  animation: spin $t linear infinite;
+  animation-delay: -($t / 6) * 1; //negative delay to change phase
+}
+.pen {
+  width: $i;
+  top: calc(50% - #{$i/2} / 2);
+  left: calc(50% - #{$i/2} / 2);
+  position: absolute;
+  display: block;
+  animation: spin $t linear infinite;
+  animation-delay: -($t / 6) * 2;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg) translateX($r) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX($r) rotate(-360deg);
+  }
+}
+
+.wireframes {
+  width: $i;
+
+  top: calc(50% - #{$i/2} / 2);
+  left: calc(50% - #{$i/2} / 2);
+  position: absolute;
+  display: block;
+  animation: spin $t linear infinite;
+  animation-delay: -($t / 6) * 3;
+}
+.stickies {
+  width: $i;
+
+  top: calc(50% - #{$i/2} / 2);
+  left: calc(50% - #{$i/2} / 2);
+  position: absolute;
+  display: block;
+  animation: spin $t linear infinite;
+  animation-delay: -($t / 6) * 4;
+}
+
+.sitemap {
+  width: $i;
+
+  top: calc(50% - #{$i/2} / 2);
+  left: calc(50% - #{$i/2} / 2);
+  position: absolute;
+  display: block;
+  animation: spin $t linear infinite;
+  animation-delay: -($t / 6) * 5;
+}
+.mug {
+  width: $i;
+
+  top: calc(50% - #{$i/2} / 2);
+  left: calc(50% - #{$i/2} / 2);
+  position: absolute;
+  display: block;
+  animation: spin $t linear infinite;
+  animation-delay: -($t / 6) * 6; //negative delay to change phase
+}

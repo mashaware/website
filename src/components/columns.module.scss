@@ -2,15 +2,13 @@
   display: flex;
   justify-content: space-evenly;
   width: 100%;
+  flex-wrap: wrap;
 }
-.borders > .column {
-  border-left: 1px solid black;
-}
-
-.borders > .column:first-child {
-  border-left: none;
-}
+ 
 .column {
   flex-grow: 1;
   flex-basis: 0;
+  min-width: 250px;
+  padding: 1rem;
+  max-width: 50%;
 }

@@ -28,20 +28,22 @@
 
 .nav ul{
     list-style-type: none;
+    margin: 0;
 
 }
 .nav li {
     display: inline-block;
     padding: 1rem;
+    margin: 0;
 }
 .nav a {
     text-transform: uppercase;
     text-decoration: none;
-    color: black;
+    color: #434343;
     display: inline-block;
 }
 .nav a:hover{
-    background: black;
+    background: #434343;
     color: white;
     transform: rotate(5deg);
 }

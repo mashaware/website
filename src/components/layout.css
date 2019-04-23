@@ -4,6 +4,8 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 body {
+  color: #434343;
+  overflow-x: hidden;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -385,6 +387,7 @@ p {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
+  font-size: 0.8rem;
 }
 figure {
   margin-left: 0;
@@ -509,6 +512,7 @@ th {
   font-weight: bold;
 }
 li {
+  font-size: 0.8rem;
   margin-bottom: calc(1.45rem / 2);
 }
 ol li {
