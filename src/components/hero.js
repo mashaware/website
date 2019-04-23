@@ -6,23 +6,37 @@ import { useStaticQuery, graphql } from "gatsby"
 const Anim = () => {
   const {face, book, wireframes, mug, pen, sitemap, stickies, } = useStaticQuery(
      graphql`
-   fragment imageQuery on File {
-     childImageSharp {
-       fixed(width: 200px) {
-         ...GatsbyImageSharpFixed
-       }
-     }
-   }
-   query {
-face: file(relativePath:  { eq: "../images/my face.png" }) {...imageQuery}
-book: file(relativePath:  { eq: "../images/book.png" }) {...imageQuery}
-wireframes: file(relativePath:  { eq: "../images/wireframes.png" }) {...imageQuery}
-mug: file(relativePath:  { eq: "../images/mug.png" }) {...imageQuery}
-pen: file(relativePath:  { eq: "../images/pen.png" }) {...imageQuery}
-sitemap: file(relativePath:  { eq: "../images/sitemap.png" }) {...imageQuery}
-stickies: file(relativePath:  { eq: "../images/stickies.png" }) {...imageQuery}
+fragment imageQuery on File {
+  childImageSharp {
+    fixed(width: "200px") {
+      ...GatsbyImageSharpFixed
+    }
+  }
+}
 
-   }
+{
+  face: file(relativePath: {eq: "../images/my face.png"}) {
+    ...imageQuery
+  }
+  book: file(relativePath: {eq: "../images/book.png"}) {
+    ...imageQuery
+  }
+  wireframes: file(relativePath: {eq: "../images/wireframes.png"}) {
+    ...imageQuery
+  }
+  mug: file(relativePath: {eq: "../images/mug.png"}) {
+    ...imageQuery
+  }
+  pen: file(relativePath: {eq: "../images/pen.png"}) {
+    ...imageQuery
+  }
+  sitemap: file(relativePath: {eq: "../images/sitemap.png"}) {
+    ...imageQuery
+  }
+  stickies: file(relativePath: {eq: "../images/stickies.png"}) {
+    ...imageQuery
+  }
+}
  `)
   return (
     <div className={styles.wrapper}>
